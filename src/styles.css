@@ -2,7 +2,19 @@
 * {
 	box-sizing: border-box;
 }
-
+body {
+	font-size: 1.2em;
+}
+p::after, p::before {
+	font-size: 2em;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	content: '🤷  🤷🏾‍  🤷  🤷🏾‍  🤷  🤷🏾‍  🤷\a';
+}
+p {
+	text-align: center;
+}
 /* body *::after, body *::before {
 	content: ' 🦄 ' !important;
 } */
@@ -11,22 +23,8 @@ button {
 	padding: 0.2em;
 	margin: 0.3em;
 }
-button::after, button::before { content: ' 🦄 ' !important; }
-/* body {
-	background-image: url('https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80');
-	background-repeat: no-repeat;
-	height: 100vh;
-	background-attachment: fixed;
-	background-size: cover;
-	color: rgb(235, 235, 235);
-	font-size: 1.3em;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-} */
+
+
 
 
 /* div {
@@ -39,5 +37,5 @@ div {
 	background-image: repeating-linear-gradient(to right,#c4e17f 0px, #c4e17f 50px,#f7fdca 50px, #f7fdca 100px,#fad071 100px, #fad071 150px,#f0766b 150px, #f0766b 200px,#db9dbe 200px, #db9dbe 250px,#c49cdf 250px, #c49cdf 300px,#6599e2 300px, #6599e2 350px,#61c2e4 350px, #61c2e4 400px);
 	background-size: 100% 10px;
 	background-repeat:no-repeat;
-	padding: 20px 5px 10px 5px;
+	padding: 20px 0 10px 0;
 }

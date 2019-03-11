@@ -1,0 +1,11 @@
+<div>
+	Vilken är den bästa glassmaken? <br />
+	<input [(ngModel)]="bestFlavour"/>
+	<ul>
+
+		<li *ngFor="let flavour of flavours">
+			{{ flavour }}
+			<span *ngIf="flavour === bestFlavour"> - här är den!!</span>
+		</li>
+	</ul>
+</div>
